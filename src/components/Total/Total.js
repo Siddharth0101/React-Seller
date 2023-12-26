@@ -1,8 +1,8 @@
 function Total(prop) {
-return (
+  return (
     <div>
-        {`Total-`}
+      <h2>Total</h2>
     </div>
-)
+  );
 }
-export default Total
+export default Total;
