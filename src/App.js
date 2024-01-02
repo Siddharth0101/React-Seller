@@ -1,21 +1,11 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Form from "./components/Form/Form";
-import List from "./components/List/List";
-import { useState } from "react";
-import Total from "./components/Total/Total";
+// src/App.js
+import React from "react";
+import ProductList from "./components/ProductList";
+
 function App() {
-  const [formData, setFormData] = useState([]);
-  const getDataFromForm = (objectForm) => {
-    setFormData((prev) => {
-      return [...prev, objectForm];
-    });
-  };
   return (
-    <div>
-      <Form onForm={getDataFromForm} />
-      <List userData={formData} />
-      <Total></Total>
+    <div className="App">
+      <ProductList />
     </div>
   );
 }
